@@ -3,11 +3,16 @@
     border: none;
     border-radius: 8px;
     outline: none;
-    min-height: 56px;
+    min-height: 46px;
     width: 100%;
     padding: 14px;
     color: #ffffff;
     font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.custom-text-input::placeholder{
+    color: rgba(255, 255, 255, .6);
 }
 
 input[type=color].custom-text-input {
@@ -16,8 +21,9 @@ input[type=color].custom-text-input {
 }
 
 .custom-button{
-    height: 56px;
+    height: 46px;
     width: 100%;
+    font-size: 1rem;
     border: none;
     border-radius: 8px;
     background: var(--middle_blue);
