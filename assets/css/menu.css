@@ -1,0 +1,49 @@
+.menu {
+    padding-left: 32px;
+    padding-top: 14px;
+}
+
+.menu-title {
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin: 1rem 0;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background: rgba(80, 129, 251, .2);
+    color: #ffffff;
+    border-radius: 16px;
+    margin-right: 16px;
+}
+
+.icon.active {
+    background: var(--middle_blue);
+}
+
+.icon > i {
+    font-size: 1.25rem;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.menu-item > span {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+/** MENU RIGHT */
+.menu-right {
+    padding-right: 32px;
+    padding-top: 14px;
+}

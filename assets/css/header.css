@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+    height: 64px;
+}
+
+.logo {
+    width: 300px;
+}
+
+.search {
+    padding: 0 32px;
+}
+
+.profile {
+    width: 300px;
+}
+
+.profile > span {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.profile > img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
