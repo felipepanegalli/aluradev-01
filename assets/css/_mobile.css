@@ -3,6 +3,7 @@
         grid-template-columns: 100%;
         grid-template-areas:
         "header"
+        "search"
         "menu"
         "content"
         "sidenav-right";
@@ -21,6 +22,21 @@
         display: none;
     }
 
+    .mobile-search {
+        grid-area: search;
+        display: block;
+        padding: 0 16px;
+        transition: .5s ease-out;
+        opacity: 0;
+        height: 0;
+    }
+
+    .mobile-search.active {
+        transition: .5s ease-in;
+        opacity: 1;
+        height: 100%;
+    }
+
     .form-container {
         margin-bottom: 2rem;
         padding: 0 16px;
@@ -30,11 +46,11 @@
         padding: 16px;
     }
 
-    .menu-mobile{
+    .menu-mobile {
         padding: 0 16px;
     }
 
-    #iptSearch{
+    #iptSearch {
         display: none;
     }
 
