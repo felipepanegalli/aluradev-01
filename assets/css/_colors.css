@@ -1,0 +1,28 @@
+:root {
+    --blue-100: #96b9fd;
+    --blue-200: #7ba4fc;
+    --blue-300: #5081fb;
+    --blue-400: #051D3B;
+
+    --mac-red: #FF5F56;
+    --mac-orange: #FFBD2E;
+    --mac-green: #27C93F;
+}
+
+.bg-red {
+    background: var(--mac-red);
+}
+
+.bg-orange {
+    background: var(--mac-orange);
+}
+
+.bg-green {
+    background: var(--mac-green);
+}
+
+.f-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}

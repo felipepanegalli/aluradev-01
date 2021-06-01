@@ -1,0 +1,31 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body, p, h1, h2, ul, li, blockquote {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: var(--blue-400);
+}
+
+/* GRID */
+.f-structure {
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    grid-template-areas:
+        "header header header"
+        "sidenav content sidenav-right";
+    color: #FFFFFF;
+}

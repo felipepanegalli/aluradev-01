@@ -1,0 +1,38 @@
+.f-sidenav {
+    grid-area: sidenav;
+}
+
+.f-sidenav h2 {
+    padding-left: 32px;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.f-sidenav li a {
+    display: flex;
+    margin: 16px 0 16px 32px;
+    align-items: center;
+    color: rgba(255, 255, 255, .2);
+}
+
+.f-sidenav li a.active {
+    color: #FFFFFF;
+}
+
+.f-sidenav li a.active .menu-icon {
+    color: #FFFFFF;
+    background-color: var(--blue-300);
+}
+
+.menu-icon {
+    background-color: rgba(80, 129, 251, .2);
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, .2);
+}

@@ -5,101 +5,97 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alura Dev - FrontEnd Challenge</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-          referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>AluraDev Challenge - FrontEnd :: Felipe Panegalli</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/atom-one-dark.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<aside id="sidebar">
-    <section class="title-container">
-        <img src="./assets/img/Logo.svg" height="35" alt="Logo do Alura Dev">
-    </section>
-    <section class="title-header">
-        <p>Menu</p>
-    </section>
-    <div class="links-container">
-        <div class="link active">
-            <div class="icon"><i class="fas fa-code"></i></div>
-            <span>Editor de Código</span>
-        </div>
-        <div class="link">
-            <div class="icon"><i class="fas fa-users"></i></div>
-            <span>Comunidade</span>
-        </div>
-    </div>
-</aside>
-
-<main id="main">
-    <header id="header">
-        <div class="input-icon">
-            <input type="text" placeholder="Busque por algo">
-            <div>
-                <i class="fas fa-search"></i>
-            </div>
-        </div>
-        <div class="profile-section">
+<div class="f-structure">
+    <header class="f-header">
+        <a href="" class="logo">
+            <img src="./assets/img/Logo.svg" alt="AluraDev Logo">
+        </a>
+        <input type="text" placeholder="Buscando algum código?" name="iptSearch" id="iptSearch" class="f-input">
+        <div class="f-profile">
             <img src="./assets/img/profile.jpg" alt="Foto de Perfil">
             <span>Felipe Panegalli</span>
         </div>
     </header>
-    <section id="content">
-        <div id="main-content">
-            <div class="card">
-                <div class="card-bg">
-                    <div class="card-window">
-                        <div class="card-header">
-                            <div class="dot mac-red"></div>
-                            <div class="dot mac-yellow"></div>
-                            <div class="dot mac-green"></div>
-                        </div>
-                        <div class="card-body">
-                            const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-                            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-                            const unfold = (f, seed) => {
-                            const go = (f, seed, acc) => {
-                            const res = f(seed)
-                            return res ? go(f, res[1], acc.concat([res[0]])) : acc
-                            }
-                            return go(f, seed, [])
-                            }
-                        </div>
-                    </div>
+
+    <nav class="f-sidenav">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#" class="active">
+                <div class="menu-icon"><i class="fas fa-code"></i></div>
+                Editor de Código</a></li>
+            <li><a href="#">
+                <div class="menu-icon"><i class="fas fa-users"></i></div>
+                Comunidade</a></li>
+        </ul>
+    </nav>
+
+    <main class="f-content">
+        <div class="f-card">
+            <div class="f-card-window">
+                <div class="f-card-header">
+                    <div class="f-dot bg-red"></div>
+                    <div class="f-dot bg-orange mx-1"></div>
+                    <div class="f-dot bg-green"></div>
                 </div>
-                <div class="card-footer my-4">
-                    Visualizar com o highlight
+                <div class="f-card-body">
+                    <pre>
+                        <code class="hljs language-javascript">
+    const array = [1, 1, 1, 3, 3, 2, 2];
+
+    // Method 1: Using a Set
+    const unique = [...new Set(array)];
+
+    // Method 2: Array.prototype.reduce
+    const unique = array.reduce((result, element) => {
+    return result.includes(element) ? result : [...result, element];
+    }, []);
+
+    // Method 3: Array.prototype.filter
+    const unique = array.filter((element, index) => {
+    return array.indexOf(element) === index;
+    });
+                        </code>
+                    </pre>
                 </div>
+            </div>
+            <div class="f-card-footer">
+                Visualizar com o highlight
             </div>
         </div>
-        <aside id="sidebar-right">
-            <section class="title-header">
-                <p>Seu Projeto</p>
-            </section>
-            <div class="container-header">
-                <input type="text" placeholder="Nome do seu projeto" id="iptName"
-                       class="custom-text-input">
-                <textarea name="description" id="txtDescription" cols="30" rows="5"
-                          placeholder="Descrição do seu projeto" class="custom-text-input"></textarea>
-            </div>
-            <section class="title-header">
-                <p>Personalização</p>
-            </section>
-            <div class="container-header">
-                <select name="language" id="selLanguage" class="custom-text-input">
-                    <option value="" selected disabled>Linguagem</option>
-                    <option value="php">PHP</option>
-                    <option value="javascript">Javascript</option>
-                    <option value="html">HTML</option>
-                    <option value="css">CSS</option>
-                </select>
+    </main>
 
-                <input type="color" id="iptColor" name="color" class="custom-text-input" value="#80e5ff">
+    <aside class="f-sidenav-right">
+        <h2 class="menu-title">Seu Projeto</h2>
+        <div class="form-container">
+            <input type="text" id="iptName" name="name" class="f-input my-1" placeholder="Nome do seu projeto">
+            <textarea name="description" id="iptDescription" cols="30" rows="5" class="f-input my-1"
+                      placeholder="Descrição do seu projeto"></textarea>
+        </div>
 
-                <button type="button" id="btnSave" class="btn btn-primary custom-button">Salvar projeto</button>
-            </div>
-        </aside>
-    </section>
-</main>
+        <h2 class="menu-title">Personalização</h2>
+        <div class="form-container">
+            <select name="language" id="selLanguage" class="f-input my-1 w-100">
+                <option value="" selected disabled>Linguagem</option>
+                <option value="javascript">Javascript</option>
+                <option value="html">Html</option>
+                <option value="css">Css</option>
+            </select>
+            <input type="color" name="color" id="iptColor" value="#80e5FF" class="my-1">
+            <button type="button" class="f-button my-1">Salvar projeto</button>
+        </div>
+    </aside>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 </body>
 </html>

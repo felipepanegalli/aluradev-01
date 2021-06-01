@@ -1,0 +1,19 @@
+.mx-1 {
+    margin: 0 .5rem;
+}
+
+.mx-2 {
+    margin: 0 1rem;
+}
+
+.my-1 {
+    margin: .5rem 0;
+}
+
+.my-2 {
+    margin: 1rem 0;
+}
+
+.w-100 {
+    width: 100% !important;
+}

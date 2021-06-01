@@ -1,0 +1,33 @@
+.f-card {
+    padding: 32px;
+}
+
+.f-card-window {
+    background: #27C93F;
+    padding: 32px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.f-card-header {
+    background: var(--blue-400);
+    padding: 16px 16px 0 16px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+}
+
+.f-card-body {
+    background: var(--blue-400);
+    border-radius: 0 0 8px 8px;
+}
+
+.f-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    margin: 16px 0;
+    border-radius: 8px;
+    background: rgba(80, 126, 251, .3);
+}
