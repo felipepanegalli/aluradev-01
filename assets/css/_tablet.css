@@ -52,8 +52,4 @@
         height: 100%;
         transform: scaleY(1);
     }
-
-    .mobile-search, #mobile-search{
-        display: none;
-    }
 }
