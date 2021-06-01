@@ -4,11 +4,12 @@
 @import "_form.css";
 @import "_utils.css";
 @import "_cards.css";
-
 @import "_header.css";
 @import "_content.css";
 @import "_sidenav-left.css";
 @import "_sidenav-right.css";
+@import "_tablet.css";
+@import "_mobile.css";
 
 
 /* Custom Highlight */

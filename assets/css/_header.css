@@ -24,3 +24,41 @@
     width: 32px;
     border-radius: 50%;
 }
+
+.f-profile-mobile{
+    display: none;
+}
+
+.f-profile-mobile div{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.f-profile-mobile div button{
+    display: flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: #FFFFFF;
+    border: none;
+}
+
+.f-profile-mobile div button i{
+    font-size: 2rem;
+}
+
+.menu-mobile{
+    grid-area: menu;
+    display: none;
+    padding: 0 32px;
+}
+
+.menu-mobile ul li a{
+    color: #FFFFFF;
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}

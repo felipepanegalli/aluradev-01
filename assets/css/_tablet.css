@@ -1,0 +1,55 @@
+@media (max-width: 768px) {
+    .f-structure {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "menu"
+        "content"
+        "sidenav-right";
+    }
+
+    .f-header {
+        grid-area: header;
+        padding: 32px 32px 0 32px;
+        height: 56px;
+        display: grid;
+        grid-template-columns: 175px 1fr 100px;
+        align-items: center;
+    }
+
+    .f-profile{
+        display: none;
+    }
+
+    .f-profile-mobile{
+        display: block;
+    }
+
+    .f-sidenav {
+        display: none;
+    }
+
+    .form-container {
+        margin-bottom: 2rem;
+        padding: 0 32px;
+    }
+
+    .menu-title {
+        padding: 16px 32px;
+    }
+
+    .menu-mobile{
+        display: block;
+        transition: .5s ease-out;
+        opacity: 0;
+        height: 0;
+        transform: scaleY(0);
+    }
+
+    .menu-mobile.active{
+        transition: .5s ease-in;
+        opacity: 1;
+        height: 100%;
+        transform: scaleY(1);
+    }
+}

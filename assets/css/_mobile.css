@@ -1,0 +1,44 @@
+@media (max-width: 425px) {
+    .f-structure {
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "header"
+        "menu"
+        "content"
+        "sidenav-right";
+    }
+
+    .f-header {
+        grid-area: header;
+        padding: 16px 16px 0 16px;
+        height: 56px;
+        display: grid;
+        grid-template-columns: 175px 1fr;
+        align-items: center;
+    }
+
+    .f-sidenav {
+        display: none;
+    }
+
+    .form-container {
+        margin-bottom: 2rem;
+        padding: 0 16px;
+    }
+
+    .menu-title {
+        padding: 16px;
+    }
+
+    .menu-mobile{
+        padding: 0 16px;
+    }
+
+    #iptSearch{
+        display: none;
+    }
+
+    .f-card, .f-card-window {
+        padding: 16px;
+    }
+}
